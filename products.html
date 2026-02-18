@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DHanniah Foodie in Poblacion,Boljoon,Cebu</title>
+  <meta name ="description" content="Food vlog
+Mukbang
+Street food
+Food review
+Eating show
+Filipino food
+Online content creator
+Taste test
+Viral foods
+Social media foodie">
+  <meta name="kryword" content="DHanniah Foodie creates food vlogs selling products and services.">
+</HEAD>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:'Poppins', sans-serif;
+  background:#f2e9d8;
+  color:#3b2f2f;
+  overflow-x:hidden;
+}
+
+header{
+  width:100%;
+  padding:25px 60px;
+  background:#3b2f2f;
+  color:#f8f1e7;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-weight:600;
+  letter-spacing:1px;
+  position:fixed;
+  top:0;
+  z-index:999;
+  box-shadow:0 4px 20px rgba(0,0,0,0.2);
+}
+header nav a{
+  margin-left:5px;
+  color:#f8f1e7;
+  text-decoration:none;
+  transition:0.3s;
+}
+header nav a:hover{
+  color:#d9b68e;
+  transform:scale(1.1);
+}
+
+section{
+  margin-top:150px;
+  padding:40px 60px;
+  display:flex;
+  flex-direction:column;
+  gap:80px;
+}
+
+.product-block{
+  background:#fff9f1;
+  border-radius:25px;
+  padding:35px;
+  display:flex;
+  align-items:center;
+  gap:40px;
+  box-shadow:0 10px 40px rgba(0,0,0,0.12);
+  position:relative;
+  transition:0.5s;
+}
+.product-block:hover{
+  transform:scale(1.02);
+  box-shadow:0 20px 55px rgba(0,0,0,0.18);
+}
+
+.product-img{
+  width:280px;
+  height:280px;
+  border-radius:25px;
+  object-fit:cover;
+  cursor:pointer;
+  transition:0.4s;
+  box-shadow:0 8px 30px rgba(0,0,0,0.18);
+}
+.product-img:hover{
+  transform:scale(1.07) rotate(2deg);
+}
+
+.product-info{
+  flex:1;
+}
+.product-info h2{
+  font-family:'Playfair Display', serif;
+  font-size:2.4rem;
+  margin-bottom:15px;
+  color:#3b2f2f;
+}
+.product-info p{
+  font-size:1.1rem;
+  color:#5b4a3c;
+  margin-bottom:18px;
+}
+
+.guide{
+  display:inline-block;
+  font-size:0.9rem;
+  color:#d08c60;
+  margin-bottom:12px;
+  opacity:0.8;
+}
+
+.description-panel{
+  background:#fff4e6;
+  padding:25px;
+  border-radius:20px;
+  margin-top:20px;
+  box-shadow:0 10px 35px rgba(0,0,0,0.12);
+  display:none;
+  animation:fadeIn 0.5s ease;
+}
+.description-panel h3{
+  font-family:'Playfair Display', serif;
+  font-size:1.6rem;
+  margin-bottom:12px;
+  color:#3b2f2f;
+}
+.description-panel ul{
+  padding-left:20px;
+}
+.description-panel ul li{
+  margin-bottom:8px;
+  font-size:1rem;
+  color:#4c3c34;
+}
+
+@keyframes fadeIn{
+  from{opacity:0;transform:translateY(20px);}
+  to{opacity:1;transform:translateY(0);}
+}
+
+.latte-particle{
+  position:absolute;
+  width:8px;
+  height:8px;
+  background:#e3c7a5;
+  border-radius:50%;
+  animation:float 6s infinite ease-in-out;
+  opacity:0.4;
+}
+@keyframes float{
+  0%{transform:translateY(0);}
+  50%{transform:translateY(-25px);}
+  100%{transform:translateY(0);}
+}
+
+@media(max-width:900px){
+  .product-block{flex-direction:column;text-align:center;}
+  .product-img{width:230px;height:230px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>Foodie Panel</h2>
+  <nav>
+    <a href="jerald.html">Home</a>
+    <a href="index.html">Menu</a>
+    <a href="index.html">Event</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section>
+
+  <!-- GUIDE: Replace the image + title + short text below -->
+  <div class="product-block">
+    <div class="latte-particle" style="left:10%;top:20%;animation-delay:0s;"></div>
+    <div class="latte-particle" style="left:80%;top:60%;animation-delay:2s;"></div>
+
+    <img src="e.jpg" class="product-img" data-target="desc1">
+
+    <div class="product-info">
+      <h2>HOTsilog</h2>
+      <span class="guide">(Click the image)</span>
+      <p>A classic Filipino comfort meal served hot and flavorful.</p>
+
+      <div class="description-panel" id="desc1">
+        <h3>Why You Should Eat HOTsilog</h3>
+
+        <!-- GUIDE: Replace these benefits -->
+        <ul>
+          <li>Provides a strong energy boost from rice and protein </li>
+          <li>Helps you stay full longer</li>
+          <li>Ideal breakfast meal for busy mornings </li>
+          <li>Good balance of carbohydrates, protein, and fat</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-block">
+    <img src="r2.jpg" class="product-img" data-target="desc2">
+
+    <div class="product-info">
+      <h2>Lumpia</h2>
+      <span class="guide">(Click the image to reveal description)</span>
+      <p>Crispy, golden, and packed with flavor.</p>
+
+      <div class="description-panel" id="desc2">
+        <h3>Why You Should Eat Lumpia</h3>
+        <ul>
+<li>Lumpia gives you vitamins-A from the vegetables inside.</li>
+<li>Lumpia provides energy because of its carbs and protein.</li>
+<li>Light yet flavorful and satisfying</li>
+<li>Easy to share and loved by all ages</li>
+<li>Customizable fillings: meat, vegetables, or mixed</li>
+<li>Quick to cook and serve</li>
+<li>Iconic Filipino comfort food</li>
+<li>Pairs well with sauces for extra flavor</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-block">
+    <img src="tt.jpg" class="product-img" data-target="desc3">
+
+    <div class="product-info">
+      <h2>Ice Spanish Latte</h2>
+      <span class="guide">(Click the image to reveal description)</span>
+      <p>Sweet, creamy, and refreshing coffee blend.</p>
+
+      <div class="description-panel" id="desc3">
+        <h3>Why You Should Drink This</h3>
+        <ul>
+         <li>Calcium – helps make your bones strong.</li>
+<li>Refreshing iced beverage, perfect for hot days</li>
+<li>Balanced taste of coffee and milk</li>
+<li>Boosts energy and keeps you alert</li>
+<li>Feels like a premium café experience at home</li>
+<li>Can be paired with snacks or pastries</li>
+<li>Customizable sugar/milk level for your preference</li>
+<li>Instagram-worthy drink with aesthetic presentation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-block">
+    <img src="fry.jpg" class="product-img" data-target="desc4">
+
+    <div class="product-info">
+      <h2>French Fries</h2>
+      <span class="guide">(Click the image to reveal description)</span>
+      <p>Crispy, golden, and perfectly salted.</p>
+
+      <div class="description-panel" id="desc4">
+        <h3>Why You Should Eat Fries</h3>
+        <ul>
+          <li>Vitamin B6 – helps with brain function and metabolism</li>
+          <li>Vitamin C – only a little because it decreases when fried.</li>
+          <li>Perfect partner for any meal</li>
+          <li>Makes every mood better</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<script>
+document.querySelectorAll('.product-img').forEach(img=>{
+  img.addEventListener('click',()=>{
+    const target=img.getAttribute('data-target');
+    const panel=document.getElementById(target);
+
+    if(panel.style.display==="block"){
+      panel.style.display="none";
+    }else{
+      document.querySelectorAll('.description-panel').forEach(p=>p.style.display="none");
+      panel.style.display="block";
+    }
+  });
+});
+</script>
+
+</body>
+</html>

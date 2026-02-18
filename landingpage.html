@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>landingpage.html</title>
+ 
+<meta charset="UTF-8">
+<title>Contact Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-image: url('mul.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .header {
+      text-align: center;
+      padding: 60px 20px;
+      background: rgba(255, 255, 255, 0.85);
+      animation: fadeDown 1.1s ease forwards;
+    }
+
+    .header h1 {
+      font-size: 65px;
+      color: #ff7b00; 
+      letter-spacing: 2px;
+      margin: 0;
+    }
+
+    .header h2 {
+      font-size: 30px;
+      color: #444;
+      margin-top: 10px;
+      font-weight: 400;
+    }
+
+    .nav {
+      text-align: center;
+      background: #ff7b00;
+      padding: 18px;
+      animation: fadeUp 1s ease forwards;
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 40px;
+      margin: 0 25px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .nav a:hover {
+      color: black;
+      letter-spacing: 1px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 50px;
+      font-weight: 700;
+      color: black;
+      margin-top: 40px;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 20px;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      margin: 20px;
+      border-radius: 14px;
+      transition: 0.4s;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+
+    .gallery img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    .footer {
+      margin-top: 50px;
+      background: rgba(0, 0, 0, 0.85);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 18px;
+      animation: fadeUp 1.4s ease forwards;
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>DHanniah Foodie</h1>
+    <h2>GOOD FOOD GOOD MOOD</h2>
+  </div>
+
+  <div class="nav">
+    <a href="home.html">HOME</a>
+    <a href="index.html">EVENT</a>
+    <a href="contactus.html">CONTACT US</a>
+    <a href="PRODUCTS.html">PRODUCT</a>
+  </div>
+
+  <h1 class="section-title">TASTY</h1>
+
+  <div class="gallery">
+    <img src="r1.jpg">
+    <img src="hotsilog.jpg">
+    <img src="tt.jpg">
+  </div>
+    
+</body>
+</html>
